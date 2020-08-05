@@ -18,6 +18,9 @@
 - Use the PCA algorithm from sklearn (Links to an external site.) to reduce the dimensions of the X DataFrame down to three principal components.
 - create a DataFrame named “pcs_df” that includes the following columns: PC 1, PC 2, and PC 3.
 - Use the crypto_df.index as the index for this new DataFrame.
+- ***Result:*** 
+<img width="197" alt="pcs_df" src="https://user-images.githubusercontent.com/62089134/89401741-9fbe2d00-d6ca-11ea-9057-614a0e185656.png">
+
 
 ### Clustering Cryptocurrencies Using K-means
 - Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
