@@ -21,11 +21,12 @@
 
 ### Clustering Cryptocurrencies Using K-means
 - Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
-***At point 1 (top left), the line starts as a steep vertical slope that breaks at point 4, shifts to a slightly horizontal slope, breaks again at point 6, then shifts to a strong horizontal line that reaches to point 9.***
-- Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
-- Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType,   TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
+- Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm. ***Resoning At point 1 (top left), the line starts as a steep vertical slope that breaks at point 4, shifts to a slightly horizontal slope, breaks again at point 6, then shifts to a strong horizontal line that reaches to point 9.***
+- Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType,   TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class. ***Process: used inner join to combine the class_df, pcs_df, and coins_name DataFrames. This resulted in the following table.***
 
 ### Visualizing Results
 - Create a 3D scatter plot using Plotly Express to plot the clusters using the clustered_df DataFrame. You should include the following parameters on the plot: hover_name="CoinName" and hover_data=["Algorithm"] to show this additional info on each data point.
+*** Result: ***
+
 - Use hvplot.table to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: CoinName, Algorithm, ProofType, TotalCoinSupply, TotalCoinsMined, and Class.
 - Create a scatter plot using hvplot.scatter to present the clustered data about cryptocurrencies having x="TotalCoinsMined" and y="TotalCoinSupply" to contrast the number of available coins versus the total number of mined coins. Use the hover_cols=["CoinName"] parameter to include the cryptocurrency name on each data point.
