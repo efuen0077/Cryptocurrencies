@@ -21,6 +21,7 @@
 
 ### Clustering Cryptocurrencies Using K-means
 - Create an elbow curve to find the best value for K, and use the pcs_df DataFrame.
+-- At point 1 (top left), the line starts as a steep vertical slope that breaks at point 4, shifts to a slightly horizontal slope, breaks again at point 6, then shifts to a strong horizontal line that reaches to point 9
 - Once you define the best value for K, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. Use the pcs_df to run the K-means algorithm.
 - Create a new DataFrame named “clustered_df,” that includes the following columns: Algorithm, ProofType,   TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
 
